@@ -1,0 +1,16 @@
+create table Klijenti(
+KlijentID int not null primary key identity(1,1),
+Naziv nvarchar(50) not null,
+Lozinka nvarchar(50) not null
+)
+create table Administratori(
+AdminID int not null primary key identity(1,1),
+AdminNaziv nvarchar(50) not null,
+Lozinka nvarchar(100) not null
+)
+create table Prijavljeni(
+PrijavljenID int not null primary key identity(1,1),
+Ime nvarchar(50) not null,
+Adresa nvarchar(50)not null,
+BrTelefon int,
+)
